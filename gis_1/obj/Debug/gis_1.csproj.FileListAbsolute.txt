@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\GisWinform\gis_1\bin\Debug\gis_1.exe.config
+C:\Users\Administrator\Desktop\GisWinform\gis_1\bin\Debug\gis_1.exe
+C:\Users\Administrator\Desktop\GisWinform\gis_1\bin\Debug\gis_1.pdb
+C:\Users\Administrator\Desktop\GisWinform\gis_1\bin\Debug\ESRI.ArcGIS.AxControls.dll
+C:\Users\Administrator\Desktop\GisWinform\gis_1\bin\Debug\ESRI.ArcGIS.Version.dll
+C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.Form1.resources
+C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.Properties.Resources.resources
+C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.exe
+C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.pdb
