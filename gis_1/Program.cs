@@ -17,6 +17,8 @@ namespace gis_1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
+            //ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.Engine);
+
             Application.Run(new Form1());
         }
     }

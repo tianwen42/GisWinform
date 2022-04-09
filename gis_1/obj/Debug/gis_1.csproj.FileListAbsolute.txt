@@ -10,3 +10,15 @@ C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.csproj.GenerateR
 C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.exe
 C:\Users\Administrator\Desktop\GisWinform\gis_1\obj\Debug\gis_1.pdb
+D:\Github\GisWinform\gis_1\bin\Debug\gis_1.exe.config
+D:\Github\GisWinform\gis_1\bin\Debug\gis_1.exe
+D:\Github\GisWinform\gis_1\bin\Debug\gis_1.pdb
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.Form1.resources
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.Properties.Resources.resources
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.csproj.GenerateResource.cache
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.csproj.CoreCompileInputs.cache
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.csproj.CopyComplete
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.exe
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.pdb
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.csprojAssemblyReference.cache
+D:\Github\GisWinform\gis_1\obj\Debug\gis_1.Form2.resources

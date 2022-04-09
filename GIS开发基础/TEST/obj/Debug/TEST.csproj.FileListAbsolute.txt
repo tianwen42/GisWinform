@@ -1,0 +1,13 @@
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\bin\Debug\TEST.exe.config
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\bin\Debug\TEST.exe
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\bin\Debug\TEST.pdb
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.AxControls.dll
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.Version.dll
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\obj\Debug\TEST.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\obj\Debug\TEST.Form1.resources
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\obj\Debug\TEST.Properties.Resources.resources
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\obj\Debug\TEST.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\obj\Debug\TEST.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\obj\Debug\TEST.csproj.CopyComplete
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\obj\Debug\TEST.exe
+C:\Users\Administrator\source\repos\GIS开发基础\TEST\obj\Debug\TEST.pdb
