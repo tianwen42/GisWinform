@@ -82,3 +82,6 @@ D:\Github\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.BLL40.frmQueryByAttribu
 D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.SystemUI.dll
 D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.SystemUI.xml
 D:\Github\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.BLL40.frmQueryBySpatial.resources
+D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GlobeCore.dll
+D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\stdole.dll
+D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GlobeCore.xml
