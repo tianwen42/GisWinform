@@ -40,25 +40,13 @@ namespace GISWindowsFormsApp
             //axMapControl1.Refresh();
         }
 
-        private void 地图文档加载ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //System.Windows.Forms.OpenFileDialog openFileDialog2;
-            //openFileDialog2 = new OpenFileDialog();
-            //openFileDialog2.Title = "打开地图文档";
-            //openFileDialog2.Filter = "地图文档 (*.mxd)|*.mxd";
-            //openFileDialog2.ShowDialog();
-            //string sFilePath = openFileDialog2.FileName;
-            //if (axMapControl1.CheckMxFile(sFilePath))
-            //{
-            //    axMapControl1.MousePointer =
-            //    esriControlsMousePointer.esriPointerHourglass;
-            //    axMapControl1.LoadMxFile(sFilePath, 0, Type.Missing);
-            //    axMapControl1.MousePointer =
-            //    esriControlsMousePointer.esriPointerDefault;
-            //}
-        }
 
         private void axMapControl1_OnMouseDown(object sender, IMapControlEvents2_OnMouseDownEvent e)
+        {
+
+        }
+
+        private void axMapControl1_OnExtentUpdated(object sender, IMapControlEvents2_OnExtentUpdatedEvent e)
         {
 
         }

@@ -143,7 +143,6 @@
             // 
             this.地图文档加载ToolStripMenuItem.Name = "地图文档加载ToolStripMenuItem";
             resources.ApplyResources(this.地图文档加载ToolStripMenuItem, "地图文档加载ToolStripMenuItem");
-            this.地图文档加载ToolStripMenuItem.Click += new System.EventHandler(this.地图文档加载ToolStripMenuItem_Click);
             // 
             // 加载shpToolStripMenuItem
             // 
@@ -527,6 +526,7 @@
             this.axMapControl1.Name = "axMapControl1";
             this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
             this.axMapControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseDownEventHandler(this.axMapControl1_OnMouseDown);
+            this.axMapControl1.OnExtentUpdated += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnExtentUpdatedEventHandler(this.axMapControl1_OnExtentUpdated);
             // 
             // axLicenseControl1
             // 
