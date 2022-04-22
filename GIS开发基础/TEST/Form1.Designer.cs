@@ -62,6 +62,14 @@
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.scale = new System.Windows.Forms.ToolStripStatusLabel();
+            this.position = new System.Windows.Forms.ToolStripStatusLabel();
+            this.status = new System.Windows.Forms.ToolStripStatusLabel();
+            this.blank = new System.Windows.Forms.ToolStripStatusLabel();
+            this.button16 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
@@ -79,6 +87,7 @@
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             this.tabPage7.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -88,12 +97,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(307, 116);
+            this.tabControl1.Location = new System.Drawing.Point(303, 116);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(857, 514);
+            this.tabControl1.Size = new System.Drawing.Size(848, 499);
             this.tabControl1.TabIndex = 13;
             // 
             // tabPage1
@@ -104,7 +113,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(849, 485);
+            this.tabPage1.Size = new System.Drawing.Size(840, 470);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "地图视图";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -118,7 +127,7 @@
             this.axMapControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axMapControl1.Name = "axMapControl1";
             this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
-            this.axMapControl1.Size = new System.Drawing.Size(842, 478);
+            this.axMapControl1.Size = new System.Drawing.Size(837, 442);
             this.axMapControl1.TabIndex = 0;
             this.axMapControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseDownEventHandler(this.axMapControl1_OnMouseDown_1);
             // 
@@ -163,7 +172,7 @@
             this.panel1.Controls.Add(this.axLicenseControl2);
             this.panel1.Location = new System.Drawing.Point(0, 116);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(304, 510);
+            this.panel1.Size = new System.Drawing.Size(303, 473);
             this.panel1.TabIndex = 14;
             // 
             // axMapControl2
@@ -171,7 +180,7 @@
             this.axMapControl2.Location = new System.Drawing.Point(4, 0);
             this.axMapControl2.Name = "axMapControl2";
             this.axMapControl2.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl2.OcxState")));
-            this.axMapControl2.Size = new System.Drawing.Size(296, 215);
+            this.axMapControl2.Size = new System.Drawing.Size(300, 215);
             this.axMapControl2.TabIndex = 10;
             // 
             // axTOCControl1
@@ -183,7 +192,7 @@
             this.axTOCControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axTOCControl1.Name = "axTOCControl1";
             this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
-            this.axTOCControl1.Size = new System.Drawing.Size(297, 284);
+            this.axTOCControl1.Size = new System.Drawing.Size(295, 247);
             this.axTOCControl1.TabIndex = 9;
             this.axTOCControl1.OnMouseDown += new ESRI.ArcGIS.Controls.ITOCControlEvents_Ax_OnMouseDownEventHandler(this.axTOCControl1_OnMouseDown);
             // 
@@ -207,7 +216,7 @@
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1290, 82);
+            this.tabControl2.Size = new System.Drawing.Size(1250, 82);
             this.tabControl2.TabIndex = 15;
             // 
             // tabPage3
@@ -420,16 +429,19 @@
             this.axToolbarControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axToolbarControl1.Name = "axToolbarControl1";
             this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
-            this.axToolbarControl1.Size = new System.Drawing.Size(1290, 28);
+            this.axToolbarControl1.Size = new System.Drawing.Size(1250, 28);
             this.axToolbarControl1.TabIndex = 16;
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.button16);
+            this.tabPage7.Controls.Add(this.button15);
+            this.tabPage7.Controls.Add(this.button14);
             this.tabPage7.Controls.Add(this.button13);
             this.tabPage7.Location = new System.Drawing.Point(4, 25);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(1282, 53);
+            this.tabPage7.Size = new System.Drawing.Size(1242, 53);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "符号化";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -440,15 +452,85 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(122, 41);
             this.button13.TabIndex = 0;
-            this.button13.Text = "符号化";
+            this.button13.Text = "点符号化";
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(545, 7);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(107, 40);
+            this.button14.TabIndex = 1;
+            this.button14.Text = "线符号化";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(706, 7);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(112, 40);
+            this.button15.TabIndex = 2;
+            this.button15.Text = "面符号化";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.status,
+            this.blank,
+            this.scale,
+            this.position});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 590);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1250, 25);
+            this.statusStrip1.TabIndex = 17;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // scale
+            // 
+            this.scale.Name = "scale";
+            this.scale.Size = new System.Drawing.Size(54, 20);
+            this.scale.Text = "比例尺";
+            // 
+            // position
+            // 
+            this.position.Name = "position";
+            this.position.Size = new System.Drawing.Size(39, 20);
+            this.position.Text = "坐标";
+            // 
+            // status
+            // 
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(69, 20);
+            this.status.Text = "状态栏：";
+            // 
+            // blank
+            // 
+            this.blank.Name = "blank";
+            this.blank.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.blank.Size = new System.Drawing.Size(1073, 20);
+            this.blank.Spring = true;
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(884, 7);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(104, 40);
+            this.button16.TabIndex = 3;
+            this.button16.Text = "面符号填充";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1290, 630);
+            this.ClientSize = new System.Drawing.Size(1250, 615);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.axToolbarControl1);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.panel1);
@@ -472,7 +554,10 @@
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.tabPage7.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -511,6 +596,14 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel scale;
+        private System.Windows.Forms.ToolStripStatusLabel position;
+        private System.Windows.Forms.ToolStripStatusLabel status;
+        private System.Windows.Forms.ToolStripStatusLabel blank;
+        private System.Windows.Forms.Button button16;
     }
 }
 

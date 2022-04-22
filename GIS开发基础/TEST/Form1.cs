@@ -12,6 +12,11 @@ using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Geometry;
 using ESRI.ArcGIS.Display;
 
+using System.Collections;
+using ESRI.ArcGIS.Controls;
+using ESRI.ArcGIS.Carto;
+using ESRI.ArcGIS.Geodatabase;
+
 using TEST.BLL40;
 using TEST.MODEL;
 
@@ -201,8 +206,117 @@ namespace TEST
         #region 符号化
         private void button13_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("KKKK");
+            //MessageBox.Show("KKKK");
+            try
+            {
+                //输入唯一值符号化的图层（我这里默认第一个图层【高耦合】）
+                IFeatureLayer pFeatLyr = axMapControl1.get_Layer(0) as IFeatureLayer;
+                //输入唯一值符号化的字段（我这里默认FID字段【高耦合】）
+                string sFieldName = "FID";
+
+                IGeoFeatureLayer pGeoFeatLyr = pFeatLyr as IGeoFeatureLayer;
+                ITable pTable = pFeatLyr as ITable;
+                IUniqueValueRenderer pUniqueValueRender = new UniqueValueRenderer();
+
+                int intFieldNumber = pTable.FindField(sFieldName);
+                pUniqueValueRender.FieldCount = 1;//设置唯一值符号化的关键字段为一个
+                pUniqueValueRender.set_Field(0, sFieldName);//设置唯一值符号化的第一个关键字段
+
+                IRandomColorRamp pRandColorRamp = new RandomColorRamp();
+                pRandColorRamp.StartHue = 0;
+                pRandColorRamp.MinValue = 0;
+                pRandColorRamp.MinSaturation = 15;
+                pRandColorRamp.EndHue = 360;
+                pRandColorRamp.MaxValue = 100;
+                pRandColorRamp.MaxSaturation = 30;
+                //根据渲染字段的值的个数，设置一组随机颜色，如某一字段有5个值，则创建5个随机颜色与之匹配
+                IQueryFilter pQueryFilter = new QueryFilter();
+                pRandColorRamp.Size = pFeatLyr.FeatureClass.FeatureCount(pQueryFilter);
+                bool bSuccess = false;
+                pRandColorRamp.CreateRamp(out bSuccess);
+
+                IEnumColors pEnumRamp = pRandColorRamp.Colors;
+                IColor pNextUniqueColor = null;
+                //查询字段的值
+                pQueryFilter = new QueryFilter();
+                pQueryFilter.AddField(sFieldName);
+                ICursor pCursor = pTable.Search(pQueryFilter, true);
+                IRow pNextRow = pCursor.NextRow();
+                object codeValue = null;
+                IRowBuffer pNextRowBuffer = null;
+
+                //遍历要素类中的所有要素
+                while (pNextRow != null)
+                {
+                    pNextRowBuffer = pNextRow as IRowBuffer;
+                    //获取渲染字段的每一个值
+                    codeValue = pNextRowBuffer.get_Value(intFieldNumber);
+
+                    pNextUniqueColor = pEnumRamp.Next();
+                    if (pNextUniqueColor == null)
+                    {
+                        pEnumRamp.Reset();
+                        pNextUniqueColor = pEnumRamp.Next();
+                    }
+                    IFillSymbol pFillSymbol = null;
+                    ILineSymbol pLineSymbol;
+                    IMarkerSymbol pMarkerSymbol;
+                    switch (pGeoFeatLyr.FeatureClass.ShapeType)
+                    {
+                        //如何该要素类 类型为面状要素，就创建面状填充符号
+                        case esriGeometryType.esriGeometryPolygon:
+                            {
+                                pFillSymbol = new SimpleFillSymbol();
+                                pFillSymbol.Color = pNextUniqueColor;
+                                pUniqueValueRender.AddValue(codeValue.ToString(), "", pFillSymbol as ISymbol);//添加渲染字段的值和渲染样式
+                                pNextRow = pCursor.NextRow();
+                                break;
+                            }
+                        //如何该要素类 类型为线状要素，就创建简单线符号
+                        case esriGeometryType.esriGeometryPolyline:
+                            {
+                                pLineSymbol = new SimpleLineSymbol();
+                                pLineSymbol.Color = pNextUniqueColor;
+                                pUniqueValueRender.AddValue(codeValue.ToString(), "", pLineSymbol as ISymbol);//添加渲染字段的值和渲染样式
+                                pNextRow = pCursor.NextRow();
+                                break;
+                            }
+                        //如何该要素类 类型为点状要素，就创建简单标记符号
+                        case esriGeometryType.esriGeometryPoint:
+                            {
+                                pMarkerSymbol = new SimpleMarkerSymbol();
+                                pMarkerSymbol.Color = pNextUniqueColor;
+                                pUniqueValueRender.AddValue(codeValue.ToString(), "", pMarkerSymbol as ISymbol);//添加渲染字段的值和渲染样式
+                                pNextRow = pCursor.NextRow();
+                                break;
+                            }
+                    }
+                }
+                //渲染并刷新地图窗口与目录栏窗口
+                pGeoFeatLyr.Renderer = pUniqueValueRender as IFeatureRenderer;
+                axMapControl1.Refresh();
+                axTOCControl1.Update();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("该字段不存在！");
+            }
         }
         #endregion
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
