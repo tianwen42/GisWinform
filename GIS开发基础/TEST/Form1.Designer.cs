@@ -60,6 +60,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.button13 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
@@ -76,6 +78,7 @@
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -199,6 +202,7 @@
             this.tabControl2.Controls.Add(this.tabPage4);
             this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Controls.Add(this.tabPage6);
+            this.tabControl2.Controls.Add(this.tabPage7);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
@@ -419,6 +423,27 @@
             this.axToolbarControl1.Size = new System.Drawing.Size(1290, 28);
             this.axToolbarControl1.TabIndex = 16;
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.button13);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(1282, 53);
+            this.tabPage7.TabIndex = 4;
+            this.tabPage7.Text = "符号化";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(380, 6);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(122, 41);
+            this.button13.TabIndex = 0;
+            this.button13.Text = "符号化";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -446,6 +471,7 @@
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
+            this.tabPage7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -483,6 +509,8 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Button button13;
     }
 }
 

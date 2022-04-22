@@ -191,11 +191,17 @@ namespace TEST
 
         #endregion
 
-        #region 分析这块
-        //网络这块
+        #region 网络分析这块
         private void button12_Click(object sender, EventArgs e)
         {
             MessageBox.Show("假装做了！");
+        }
+        #endregion
+
+        #region 符号化
+        private void button13_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("KKKK");
         }
         #endregion
     }
