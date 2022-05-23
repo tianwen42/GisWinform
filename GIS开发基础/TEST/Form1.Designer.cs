@@ -59,17 +59,17 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.scale = new System.Windows.Forms.ToolStripStatusLabel();
-            this.position = new System.Windows.Forms.ToolStripStatusLabel();
             this.status = new System.Windows.Forms.ToolStripStatusLabel();
             this.blank = new System.Windows.Forms.ToolStripStatusLabel();
-            this.button16 = new System.Windows.Forms.Button();
+            this.scale = new System.Windows.Forms.ToolStripStatusLabel();
+            this.position = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
@@ -85,8 +85,8 @@
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,7 +148,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(849, 485);
+            this.tabPage2.Size = new System.Drawing.Size(840, 470);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "布局视图";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@
             this.axPageLayoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axPageLayoutControl1.Name = "axPageLayoutControl1";
             this.axPageLayoutControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axPageLayoutControl1.OcxState")));
-            this.axPageLayoutControl1.Size = new System.Drawing.Size(841, 477);
+            this.axPageLayoutControl1.Size = new System.Drawing.Size(832, 462);
             this.axPageLayoutControl1.TabIndex = 0;
             // 
             // panel1
@@ -230,7 +230,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1282, 53);
+            this.tabPage3.Size = new System.Drawing.Size(1242, 53);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "图层";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -302,7 +302,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1282, 53);
+            this.tabPage4.Size = new System.Drawing.Size(1242, 53);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "查询";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -332,7 +332,7 @@
             this.tabPage5.Controls.Add(this.button12);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1282, 53);
+            this.tabPage5.Size = new System.Drawing.Size(1242, 53);
             this.tabPage5.TabIndex = 2;
             this.tabPage5.Text = "网络none";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@
             this.tabPage6.Controls.Add(this.button4);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1282, 53);
+            this.tabPage6.Size = new System.Drawing.Size(1242, 53);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "操作";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -422,16 +422,6 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // axToolbarControl1
-            // 
-            this.axToolbarControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.axToolbarControl1.Location = new System.Drawing.Point(0, 82);
-            this.axToolbarControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.axToolbarControl1.Name = "axToolbarControl1";
-            this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
-            this.axToolbarControl1.Size = new System.Drawing.Size(1250, 28);
-            this.axToolbarControl1.TabIndex = 16;
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.button16);
@@ -446,25 +436,15 @@
             this.tabPage7.Text = "符号化";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // button16
             // 
-            this.button13.Location = new System.Drawing.Point(380, 6);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(122, 41);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "点符号化";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(545, 7);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(107, 40);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "线符号化";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button16.Location = new System.Drawing.Point(884, 7);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(104, 40);
+            this.button16.TabIndex = 3;
+            this.button16.Text = "面符号填充";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button15
             // 
@@ -476,6 +456,36 @@
             this.button15.UseVisualStyleBackColor = true;
             this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(545, 7);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(107, 40);
+            this.button14.TabIndex = 1;
+            this.button14.Text = "线符号化";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(380, 6);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(122, 41);
+            this.button13.TabIndex = 0;
+            this.button13.Text = "点符号化";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // axToolbarControl1
+            // 
+            this.axToolbarControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.axToolbarControl1.Location = new System.Drawing.Point(0, 82);
+            this.axToolbarControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.axToolbarControl1.Name = "axToolbarControl1";
+            this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
+            this.axToolbarControl1.Size = new System.Drawing.Size(1250, 28);
+            this.axToolbarControl1.TabIndex = 16;
+            // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -484,23 +494,11 @@
             this.blank,
             this.scale,
             this.position});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 590);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 589);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1250, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(1250, 26);
             this.statusStrip1.TabIndex = 17;
             this.statusStrip1.Text = "statusStrip1";
-            // 
-            // scale
-            // 
-            this.scale.Name = "scale";
-            this.scale.Size = new System.Drawing.Size(54, 20);
-            this.scale.Text = "比例尺";
-            // 
-            // position
-            // 
-            this.position.Name = "position";
-            this.position.Size = new System.Drawing.Size(39, 20);
-            this.position.Text = "坐标";
             // 
             // status
             // 
@@ -515,15 +513,17 @@
             this.blank.Size = new System.Drawing.Size(1073, 20);
             this.blank.Spring = true;
             // 
-            // button16
+            // scale
             // 
-            this.button16.Location = new System.Drawing.Point(884, 7);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(104, 40);
-            this.button16.TabIndex = 3;
-            this.button16.Text = "面符号填充";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.scale.Name = "scale";
+            this.scale.Size = new System.Drawing.Size(54, 20);
+            this.scale.Text = "比例尺";
+            // 
+            // position
+            // 
+            this.position.Name = "position";
+            this.position.Size = new System.Drawing.Size(39, 20);
+            this.position.Text = "坐标";
             // 
             // Form1
             // 
@@ -552,8 +552,8 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);

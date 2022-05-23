@@ -44,7 +44,6 @@ D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GeoDatabaseExten
 D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.Server.xml
 D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GISClient.xml
 D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GeoDatabaseDistributed.xml
-D:\Github\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.csprojAssemblyReference.cache
 D:\Github\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.Form1.resources
 D:\Github\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.Properties.Resources.resources
 D:\Github\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.csproj.GenerateResource.cache
@@ -85,3 +84,4 @@ D:\Github\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.BLL40.frmQueryBySpatial
 D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GlobeCore.dll
 D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\stdole.dll
 D:\Github\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GlobeCore.xml
+D:\Github\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.csproj.AssemblyReference.cache
