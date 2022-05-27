@@ -70,6 +70,8 @@
             this.blank = new System.Windows.Forms.ToolStripStatusLabel();
             this.scale = new System.Windows.Forms.ToolStripStatusLabel();
             this.position = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.button17 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
@@ -88,6 +90,7 @@
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -212,6 +215,7 @@
             this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage8);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
@@ -525,6 +529,28 @@
             this.position.Size = new System.Drawing.Size(39, 20);
             this.position.Text = "坐标";
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.button17);
+            this.tabPage8.ForeColor = System.Drawing.Color.Black;
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1242, 53);
+            this.tabPage8.TabIndex = 5;
+            this.tabPage8.Text = "文件转换";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(595, 7);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(182, 40);
+            this.button17.TabIndex = 0;
+            this.button17.Text = "将shp转要素导入gdb";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -556,6 +582,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -604,6 +631,8 @@
         private System.Windows.Forms.ToolStripStatusLabel status;
         private System.Windows.Forms.ToolStripStatusLabel blank;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.Button button17;
     }
 }
 

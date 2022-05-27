@@ -8,7 +8,7 @@ using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.Geometry;
 
 
-namespace TEST.BLL40
+namespace TEST.BLL
 {
     class MapOperate
     {

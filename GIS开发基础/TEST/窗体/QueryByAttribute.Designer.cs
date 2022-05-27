@@ -1,4 +1,4 @@
-﻿namespace TEST.BLL40
+﻿namespace TEST.窗口
 {
     partial class frmQueryByAttribute
     {

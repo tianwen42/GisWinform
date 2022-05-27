@@ -1,24 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Geometry;
 using ESRI.ArcGIS.Display;
 
-using System.Collections;
-using ESRI.ArcGIS.Controls;
-using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Geodatabase;
 
-using TEST.BLL40;
-using TEST.MODEL;
+using TEST.BLL;
+using TEST.窗口;
 
 
 namespace TEST
@@ -315,6 +306,11 @@ namespace TEST
         }
 
         private void button16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button17_Click(object sender, EventArgs e)
         {
 
         }

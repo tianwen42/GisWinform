@@ -16,7 +16,7 @@ using ESRI.ArcGIS.DataSourcesGDB;
 using ESRI.ArcGIS.DataSourcesRaster;
 
 
-namespace TEST.BLL40
+namespace TEST.BLL
 {
     class OpenFeatureClass
     {
