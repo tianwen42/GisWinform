@@ -64,14 +64,14 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.button17 = new System.Windows.Forms.Button();
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.status = new System.Windows.Forms.ToolStripStatusLabel();
             this.blank = new System.Windows.Forms.ToolStripStatusLabel();
             this.scale = new System.Windows.Forms.ToolStripStatusLabel();
             this.position = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.button17 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
@@ -88,9 +88,9 @@
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             this.statusStrip1.SuspendLayout();
-            this.tabPage8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -105,7 +105,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(848, 499);
+            this.tabControl1.Size = new System.Drawing.Size(947, 499);
             this.tabControl1.TabIndex = 13;
             // 
             // tabPage1
@@ -116,7 +116,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(840, 470);
+            this.tabPage1.Size = new System.Drawing.Size(939, 470);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "地图视图";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@
             this.axMapControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axMapControl1.Name = "axMapControl1";
             this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
-            this.axMapControl1.Size = new System.Drawing.Size(837, 442);
+            this.axMapControl1.Size = new System.Drawing.Size(931, 442);
             this.axMapControl1.TabIndex = 0;
             this.axMapControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseDownEventHandler(this.axMapControl1_OnMouseDown_1);
             // 
@@ -151,7 +151,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(840, 470);
+            this.tabPage2.Size = new System.Drawing.Size(845, 470);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "布局视图";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             this.axPageLayoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axPageLayoutControl1.Name = "axPageLayoutControl1";
             this.axPageLayoutControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axPageLayoutControl1.OcxState")));
-            this.axPageLayoutControl1.Size = new System.Drawing.Size(832, 462);
+            this.axPageLayoutControl1.Size = new System.Drawing.Size(837, 462);
             this.axPageLayoutControl1.TabIndex = 0;
             // 
             // panel1
@@ -480,6 +480,28 @@
             this.button13.UseVisualStyleBackColor = true;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.button17);
+            this.tabPage8.ForeColor = System.Drawing.Color.Black;
+            this.tabPage8.Location = new System.Drawing.Point(4, 25);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(1242, 53);
+            this.tabPage8.TabIndex = 5;
+            this.tabPage8.Text = "文件转换";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(595, 7);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(182, 40);
+            this.button17.TabIndex = 0;
+            this.button17.Text = "将shp转要素导入gdb";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
             // axToolbarControl1
             // 
             this.axToolbarControl1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -529,28 +551,6 @@
             this.position.Size = new System.Drawing.Size(39, 20);
             this.position.Text = "坐标";
             // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.button17);
-            this.tabPage8.ForeColor = System.Drawing.Color.Black;
-            this.tabPage8.Location = new System.Drawing.Point(4, 25);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1242, 53);
-            this.tabPage8.TabIndex = 5;
-            this.tabPage8.Text = "文件转换";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(595, 7);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(182, 40);
-            this.button17.TabIndex = 0;
-            this.button17.Text = "将shp转要素导入gdb";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -579,10 +579,10 @@
             this.tabPage5.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
+            this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

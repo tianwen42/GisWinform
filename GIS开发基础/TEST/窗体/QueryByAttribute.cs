@@ -3,7 +3,6 @@ using System.Windows.Forms;
 
 using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Geodatabase;
-using ESRI.ArcGIS.esriSystem;
 
 namespace TEST.窗口
 {

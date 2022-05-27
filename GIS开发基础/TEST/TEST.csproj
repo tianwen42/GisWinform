@@ -104,15 +104,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\ConvertFeatures.cs" />
+    <Compile Include="BLL39\ConvertFeatures.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="BLL\MapOperate.cs" />
-    <Compile Include="BLL\OpenFeatureClass.cs" />
+    <Compile Include="BLL39\MapOperate.cs" />
+    <Compile Include="BLL39\OpenFeatureClass.cs" />
     <Compile Include="窗体\QueryBySpatial.cs">
       <SubType>Form</SubType>
     </Compile>
