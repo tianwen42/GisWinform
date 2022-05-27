@@ -105,7 +105,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(947, 499);
+            this.tabControl1.Size = new System.Drawing.Size(798, 486);
             this.tabControl1.TabIndex = 13;
             // 
             // tabPage1
@@ -116,7 +116,7 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(939, 470);
+            this.tabPage1.Size = new System.Drawing.Size(790, 457);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "地图视图";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@
             this.axMapControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axMapControl1.Name = "axMapControl1";
             this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
-            this.axMapControl1.Size = new System.Drawing.Size(931, 442);
+            this.axMapControl1.Size = new System.Drawing.Size(782, 429);
             this.axMapControl1.TabIndex = 0;
             this.axMapControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseDownEventHandler(this.axMapControl1_OnMouseDown_1);
             // 
@@ -151,7 +151,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(845, 470);
+            this.tabPage2.Size = new System.Drawing.Size(939, 470);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "布局视图";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -163,7 +163,7 @@
             this.axPageLayoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axPageLayoutControl1.Name = "axPageLayoutControl1";
             this.axPageLayoutControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axPageLayoutControl1.OcxState")));
-            this.axPageLayoutControl1.Size = new System.Drawing.Size(837, 462);
+            this.axPageLayoutControl1.Size = new System.Drawing.Size(931, 462);
             this.axPageLayoutControl1.TabIndex = 0;
             // 
             // panel1
@@ -498,7 +498,7 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(182, 40);
             this.button17.TabIndex = 0;
-            this.button17.Text = "将shp转要素导入gdb";
+            this.button17.Text = "将shp转gdb";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
             // 

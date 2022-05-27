@@ -312,7 +312,11 @@ namespace TEST
 
         private void button17_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("还没有完成！");
+            ConvertFeatures transObj = new ConvertFeatures();
+            transObj.shpToGdb();
+
+
+
         }
     }
 }
