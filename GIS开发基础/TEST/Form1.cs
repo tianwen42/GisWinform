@@ -268,7 +268,10 @@ namespace TEST
 
         private void 剪切ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("不好意思，我鸽了，咕咕！");
+            //新创建属性查询窗体
+            gugu frmQueryByAttribute = new gugu();
+            //显示属性查询窗体
+            frmQueryByAttribute.Show();
         }
 
         private void 融合ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -339,6 +342,29 @@ namespace TEST
             pEnvelope.Expand(1.5, 1.5, true);      //这里设置放大为2倍，可以根据需要具体设置，true是按照比例值放大，false就是按照坐标值来放大；（放大其实就是包络线范围缩小，所以此处为0.5）
             axMapControl1.Extent = pEnvelope;      //将新生成的包络线赋值给地图的范围，形成新的范围
             axMapControl1.ActiveView.Refresh();
+        }
+
+        private void 点符号化ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //新创建属性查询窗体
+            gugu frmQueryByAttribute = new gugu();
+            //显示属性查询窗体
+            frmQueryByAttribute.Show();
+        }
+
+        private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //新创建属性查询窗体
+            gugu unDoStatement = new gugu();
+            //显示属性查询窗体
+            unDoStatement.Show();
+        }
+
+        private void xY转点ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //EXCEL转点
+            xyToPoint xyTopointForm = new xyToPoint();
+            xyTopointForm.Show();
         }
     }
 }

@@ -62,3 +62,9 @@ C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.pd
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.BufferAnalysis.resources
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.Form2.resources
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.gugu.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ExcelDataReader.dll
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ExcelDataReader.pdb
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ExcelDataReader.xml
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ExcelDataReader.DataSet.xml
