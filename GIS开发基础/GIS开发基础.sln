@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1831
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GISWindowsFormsApp", "GISWindowsFormsApp\GISWindowsFormsApp.csproj", "{2FA9CCF8-143C-4176-AEF3-20DC677B51A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST", "TEST\TEST.csproj", "{EF7BFBB0-3ADC-4E85-81C1-EDD25556BE92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YL_gisform", "TEST\YL_gisform.csproj", "{EF7BFBB0-3ADC-4E85-81C1-EDD25556BE92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
