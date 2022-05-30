@@ -45,5 +45,10 @@ namespace GISWindowsFormsApp
         {
 
         }
+
+        private void 剪切TToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

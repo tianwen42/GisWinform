@@ -77,11 +77,11 @@ namespace TEST.BLL
             //输入要素数据集名称
             datasetName = fileName+"数据集";
             //保存名称
-            className= fileName + "feature";
+            className= fileName + "_feature";
+            //MessageBox.Show(System.IO.Directory.GetCurrentDirectory());
 
 
-
-            bool isSuccesful= Import(pSourceFeatureClass, pQueryFilter, @"D:\GisWinform\DATA\New File Geodatabase.gdb", "dataset", className);
+            bool isSuccesful= Import(pSourceFeatureClass, pQueryFilter, @"C:\Users\Administrator\Desktop\GisWinform\DATA\New File Geodatabase.gdb", "dataset", className);
 
             // 提示用户信息
             if (isSuccesful)

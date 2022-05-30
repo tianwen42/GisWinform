@@ -72,6 +72,10 @@
             this.blank = new System.Windows.Forms.ToolStripStatusLabel();
             this.scale = new System.Windows.Forms.ToolStripStatusLabel();
             this.position = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).BeginInit();
@@ -91,6 +95,7 @@
             this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).BeginInit();
             this.statusStrip1.SuspendLayout();
+            this.tabPage9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -151,7 +156,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(939, 470);
+            this.tabPage2.Size = new System.Drawing.Size(790, 457);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "布局视图";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -163,7 +168,7 @@
             this.axPageLayoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axPageLayoutControl1.Name = "axPageLayoutControl1";
             this.axPageLayoutControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axPageLayoutControl1.OcxState")));
-            this.axPageLayoutControl1.Size = new System.Drawing.Size(931, 462);
+            this.axPageLayoutControl1.Size = new System.Drawing.Size(782, 449);
             this.axPageLayoutControl1.TabIndex = 0;
             // 
             // panel1
@@ -216,6 +221,7 @@
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage7);
             this.tabControl2.Controls.Add(this.tabPage8);
+            this.tabControl2.Controls.Add(this.tabPage9);
             this.tabControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
@@ -428,6 +434,7 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.button19);
             this.tabPage7.Controls.Add(this.button16);
             this.tabPage7.Controls.Add(this.button15);
             this.tabPage7.Controls.Add(this.button14);
@@ -442,7 +449,7 @@
             // 
             // button16
             // 
-            this.button16.Location = new System.Drawing.Point(884, 7);
+            this.button16.Location = new System.Drawing.Point(762, 7);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(104, 40);
             this.button16.TabIndex = 3;
@@ -452,7 +459,7 @@
             // 
             // button15
             // 
-            this.button15.Location = new System.Drawing.Point(706, 7);
+            this.button15.Location = new System.Drawing.Point(576, 6);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(112, 40);
             this.button15.TabIndex = 2;
@@ -462,7 +469,7 @@
             // 
             // button14
             // 
-            this.button14.Location = new System.Drawing.Point(545, 7);
+            this.button14.Location = new System.Drawing.Point(412, 7);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(107, 40);
             this.button14.TabIndex = 1;
@@ -472,7 +479,7 @@
             // 
             // button13
             // 
-            this.button13.Location = new System.Drawing.Point(380, 6);
+            this.button13.Location = new System.Drawing.Point(260, 6);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(122, 41);
             this.button13.TabIndex = 0;
@@ -551,6 +558,48 @@
             this.position.Size = new System.Drawing.Size(39, 20);
             this.position.Text = "坐标";
             // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.button20);
+            this.tabPage9.Controls.Add(this.button18);
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1242, 53);
+            this.tabPage9.TabIndex = 6;
+            this.tabPage9.Text = "Topo操作";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(663, 7);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(107, 40);
+            this.button18.TabIndex = 0;
+            this.button18.Text = "缓冲区";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(932, 6);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(125, 40);
+            this.button19.TabIndex = 4;
+            this.button19.Text = "五级色彩渲染";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(363, 7);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(98, 40);
+            this.button20.TabIndex = 1;
+            this.button20.Text = "剪切";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -583,6 +632,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.axToolbarControl1)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.tabPage9.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -633,6 +683,10 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
     }
 }
 

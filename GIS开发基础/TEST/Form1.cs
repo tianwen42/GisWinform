@@ -318,5 +318,57 @@ namespace TEST
 
 
         }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            //1、准备的第一个参数输入图层要素类
+            IFeatureLayer inputFeaturLayer = axMapControl1.get_Layer(0) as IFeatureLayer;
+            IFeatureClass inputFeatureClass = inputFeaturLayer.FeatureClass;
+            //2、准备的第二个参数剪切图层要素类
+            IFeatureLayer clipFeaturLayer = axMapControl1.get_Layer(1) as IFeatureLayer;
+            IFeatureClass clipFeatureClass = clipFeaturLayer.FeatureClass;
+            //3、准备容差
+            double tor = 0.01;
+            //4、输出位置（IFeatureClassname)
+            IFeatureClassName pOutPut = new FeatureClassNameClass();
+            pOutPut.ShapeType = inputFeatureClass.ShapeType;
+            pOutPut.FeatureType = esriFeatureType.esriFTSimple;
+            pOutPut.ShapeFieldName = inputFeatureClass.ShapeFieldName;
+
+            //获取shapeFile数据工作空间
+            IWorkspaceName pWsN = new WorkspaceNameClass();
+            pWsN.WorkspaceFactoryProgID = "esriDataSourcesFile.ShapefileWorkspaceFactory";
+
+            pWsN.PathName = "C:\\Temp";
+            //通过IDatasetName设置输出结果相关参数
+            IDatasetName pDatasetName = pOutPut as IDatasetName;
+            pDatasetName.Name = "结果";
+            pDatasetName.WorkspaceName = pWsN;
+
+            //5、执行
+            IBasicGeoprocessor pBasicGeo = new BasicGeoprocessorClass();
+            pBasicGeo.SpatialReference = axMapControl1.SpatialReference;
+            //pBasicGeo.Clip(输入图层的要素类、剪切图层的要素类、容差、输出位置）
+            IFeatureClass result = pBasicGeo.Clip(inputFeatureClass as ITable, false, clipFeatureClass as ITable, false, tor, pOutPut);
+            //pBasicGeo.Dissolve(
+
+            //6、将结果加载到map
+            IFeatureLayer pFeatueLayer = new FeatureLayerClass();
+            pFeatueLayer.FeatureClass = result;
+            pFeatueLayer.Name = result.AliasName;
+
+            axMapControl1.AddLayer(pFeatueLayer);
+            axMapControl1.Refresh();
+        }
     }
 }
