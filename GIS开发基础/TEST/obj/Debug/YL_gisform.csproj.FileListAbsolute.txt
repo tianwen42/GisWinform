@@ -60,3 +60,5 @@ C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\YL_gisf
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.exe
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.pdb
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.BufferAnalysis.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.Form2.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.gugu.resources
