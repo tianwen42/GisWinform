@@ -1,12 +1,7 @@
-﻿using ESRI.ArcGIS.Carto;
-using ESRI.ArcGIS.DataSourcesFile;
+﻿using ESRI.ArcGIS.DataSourcesFile;
 using ESRI.ArcGIS.DataSourcesGDB;
 using ESRI.ArcGIS.Geodatabase;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TEST.BLL
@@ -64,24 +59,24 @@ namespace TEST.BLL
             //{
             //    return;
             //}
-                    //IWorkspaceFactory pFileGDBWorkspaceFactory;
+            //IWorkspaceFactory pFileGDBWorkspaceFactory;
 
-                    //FolderBrowserDialog dlg = new FolderBrowserDialog();
-                    //if (dlg.ShowDialog() != DialogResult.OK) return;
-                    //directory = dlg.SelectedPath;
-                    ////directory = targetGDBop.FileName;
-            
-                    //string gdbName = System.IO.Path.GetFileName(filePath);
-                    //MessageBox.Show(directory);
-                    //MessageBox.Show(gdbName);
+            //FolderBrowserDialog dlg = new FolderBrowserDialog();
+            //if (dlg.ShowDialog() != DialogResult.OK) return;
+            //directory = dlg.SelectedPath;
+            ////directory = targetGDBop.FileName;
+
+            //string gdbName = System.IO.Path.GetFileName(filePath);
+            //MessageBox.Show(directory);
+            //MessageBox.Show(gdbName);
             //输入要素数据集名称
-            datasetName = fileName+"数据集";
+            datasetName = fileName + "数据集";
             //保存名称
-            className= fileName + "_feature";
+            className = fileName + "_feature";
             //MessageBox.Show(System.IO.Directory.GetCurrentDirectory());
 
 
-            bool isSuccesful= Import(pSourceFeatureClass, pQueryFilter, @"C:\Users\Administrator\Desktop\GisWinform\DATA\New File Geodatabase.gdb", "dataset", className);
+            bool isSuccesful = Import(pSourceFeatureClass, pQueryFilter, @"C:\Users\Administrator\Desktop\GisWinform\DATA\New File Geodatabase.gdb", "dataset", className);
 
             // 提示用户信息
             if (isSuccesful)
@@ -169,7 +164,7 @@ namespace TEST.BLL
                 pFeatureDataConverter.ConvertFeatureClass(pSourceFeatureClassName, pQueryFilter, pTargetFeatureDatasetName, pTargetFeatureClassName, null, pTargetFields, "", 1000, 0);
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
                 return false;

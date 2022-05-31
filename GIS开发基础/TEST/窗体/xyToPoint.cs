@@ -1,13 +1,7 @@
 ﻿using ExcelDataReader;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TEST.窗体
@@ -21,8 +15,8 @@ namespace TEST.窗体
 
         private void button1_Click(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex;
-            comboBox2.SelectedIndex;
+            //comboBox1.SelectedIndex;
+            //comboBox2.SelectedIndex;
             MessageBox.Show("gg");
         }
 
@@ -35,7 +29,7 @@ namespace TEST.窗体
                 return;
             }
             string excelFilepath = op.FileName;
-            
+
             DataSet resDataSet = ReadExcelToDataSet(excelFilepath);
             dataGridView1.DataSource = resDataSet.Tables[0];
 

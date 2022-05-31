@@ -1,16 +1,13 @@
-﻿using System;
-
-using System.Windows.Forms;
+﻿using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Controls;
-using ESRI.ArcGIS.Carto;
-using ESRI.ArcGIS.Geometry;
 using ESRI.ArcGIS.Display;
-
 using ESRI.ArcGIS.Geodatabase;
-
+using ESRI.ArcGIS.Geometry;
+using System;
+using System.Windows.Forms;
 using TEST.BLL;
-using TEST.窗口;
 using TEST.窗体;
+using TEST.窗口;
 
 
 
@@ -35,7 +32,7 @@ namespace TEST
         {
 
         }
-      
+
 
         // 地图点击
         private void axMapControl1_OnMouseDown_1(object sender, IMapControlEvents2_OnMouseDownEvent e)
@@ -263,7 +260,7 @@ namespace TEST
 
         private void 查询ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void 剪切ToolStripMenuItem_Click(object sender, EventArgs e)

@@ -1,9 +1,8 @@
-﻿using System;
-using System.Windows.Forms;
-
-using ESRI.ArcGIS.Carto;
+﻿using ESRI.ArcGIS.Carto;
 using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
+using System;
+using System.Windows.Forms;
 
 namespace TEST.窗口
 {
@@ -81,7 +80,7 @@ namespace TEST.窗口
             {
                 SelectFeaturesBySpatial();
             }
-            catch 
+            catch
             { }
         }
 

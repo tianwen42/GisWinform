@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using ESRI.ArcGIS.Controls;
+﻿using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.Geometry;
+using System.Windows.Forms;
 
 
 namespace TEST.BLL
@@ -29,7 +24,7 @@ namespace TEST.BLL
         public void conTractWindow(AxMapControl e)
         {
             // 获取到拉框的范围
-                IEnvelope pEnvelopRec = e.TrackRectangle();
+            IEnvelope pEnvelopRec = e.TrackRectangle();
             //获取到视窗的范围
             IEnvelope pEnvelopActiveView = e.Extent;
             //计算缩小后的窗口的宽度
