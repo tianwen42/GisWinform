@@ -66,3 +66,4 @@ C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.Ar
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\YL_gisform.csproj.CopyComplete
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.exe
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.pdb
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\YL_gisform.csproj.AssemblyReference.cache

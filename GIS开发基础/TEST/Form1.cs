@@ -360,8 +360,70 @@ namespace TEST
         private void xY转点ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //EXCEL转点
-            xyToPoint xyTopointForm = new xyToPoint();
+            xyToPoint xyTopointForm = new xyToPoint(axMapControl1);
             xyTopointForm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 面符号填充ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //通过地图控件获得索引为i的图层
+            IFeatureLayer pFtLayer = axMapControl1.get_Layer(0) as IFeatureLayer;
+            //指定要获得的唯一值字段名称
+            string pFieldName = "NAME99";
+            IGeoFeatureLayer pGeoFeaturelayer = pFtLayer as IGeoFeatureLayer;
+            //新建唯一值渲染器
+            IUniqueValueRenderer pUniqueValueRenderer = new UniqueValueRendererClass();
+            //渲染所用的字段个数为1
+            pUniqueValueRenderer.FieldCount = 1;
+            //用哪个字段进行渲染             
+            pUniqueValueRenderer.set_Field(0, pFieldName);
+            //获取该要素类的所有要素
+            IFeatureCursor pFeatureCursor = pFtLayer.FeatureClass.Search(null, false);
+            IFeature pFeature = pFeatureCursor.NextFeature();
+            //将符合设为面要素的填充颜色
+            IFillSymbol pFillSymbol;
+            //设置随机颜色带
+            IRandomColorRamp pColorRamp = new RandomColorRampClass();
+            pColorRamp.Size = 20;//色带中有20种颜色
+            bool ok = true;
+            pColorRamp.CreateRamp(out ok);
+            IEnumColors pEnumRamp = pColorRamp.Colors;
+            int fieldIndex = pFeature.Fields.FindField(pFieldName);
+            //遍历所有要素
+            while (pFeature != null)
+            {
+                //获得该要素的字段值
+                string classValue = pFeature.get_Value(fieldIndex) as string;
+                //查找之前有无此字段值与面渲染符号相绑定，如果有则不进行符号绑定了
+                bool ValFound = false;
+                for (int i = 0; i < pUniqueValueRenderer.ValueCount; i++)
+                {
+                    if (pUniqueValueRenderer.get_Value(i) == classValue)
+                    {
+                        ValFound = true;
+                        break;
+                    }
+                }
+                //如果之前没有绑定，将符号和字段值绑定
+                if (ValFound == false)
+                {
+                    IColor pColor = pEnumRamp.Next();
+                    pFillSymbol = new SimpleFillSymbolClass();
+                    pFillSymbol.Color = pColor;
+                    pUniqueValueRenderer.AddValue(classValue, pFieldName, pFillSymbol as ISymbol);
+                }
+                pFeature = pFeatureCursor.NextFeature();
+            }
+            //设置图层的渲染效果
+            pGeoFeaturelayer.Renderer = pUniqueValueRenderer as IFeatureRenderer;
+            //更新TOC列表和地图
+            axTOCControl1.Update();
+            axMapControl1.ActiveView.PartialRefresh(esriViewDrawPhase.esriViewGeography, null, null);
         }
     }
 }

@@ -394,8 +394,9 @@
             // 面符号填充ToolStripMenuItem
             // 
             this.面符号填充ToolStripMenuItem.Name = "面符号填充ToolStripMenuItem";
-            this.面符号填充ToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.面符号填充ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.面符号填充ToolStripMenuItem.Text = "面符号填充";
+            this.面符号填充ToolStripMenuItem.Click += new System.EventHandler(this.面符号填充ToolStripMenuItem_Click);
             // 
             // 查询ToolStripMenuItem
             // 
@@ -463,14 +464,14 @@
             // shp转gdb要素ToolStripMenuItem
             // 
             this.shp转gdb要素ToolStripMenuItem.Name = "shp转gdb要素ToolStripMenuItem";
-            this.shp转gdb要素ToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.shp转gdb要素ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.shp转gdb要素ToolStripMenuItem.Text = "shp转gdb要素";
             this.shp转gdb要素ToolStripMenuItem.Click += new System.EventHandler(this.shp转gdb要素ToolStripMenuItem_Click);
             // 
             // xY转点ToolStripMenuItem
             // 
             this.xY转点ToolStripMenuItem.Name = "xY转点ToolStripMenuItem";
-            this.xY转点ToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.xY转点ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.xY转点ToolStripMenuItem.Text = "XY转点";
             this.xY转点ToolStripMenuItem.Click += new System.EventHandler(this.xY转点ToolStripMenuItem_Click);
             // 
@@ -516,6 +517,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "GISwinForms";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axMapControl1)).EndInit();
