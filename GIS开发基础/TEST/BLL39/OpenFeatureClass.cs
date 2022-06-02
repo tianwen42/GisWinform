@@ -8,7 +8,7 @@ using System;
 using System.Windows.Forms;
 
 
-namespace TEST.BLL
+namespace TEST.BLL39
 {
     class OpenFeatureClass
     {
@@ -41,6 +41,27 @@ namespace TEST.BLL
             string strFullPath = dlg.FileName;
             //    MessageBox.Show(strFullPath);
             if (strFullPath == "") return;
+            int Index = strFullPath.LastIndexOf("\\");
+            string filePath = strFullPath.Substring(0, Index);
+            string fileName = strFullPath.Substring(Index + 1);
+            //打开工作空间并添加shp文件
+            IWorkspaceFactory pWorkspaceFactory;
+            IFeatureWorkspace pFeatureWorkspace;
+            IFeatureLayer pFeatureLayer;
+            pWorkspaceFactory = new ShapefileWorkspaceFactoryClass();
+            //注意此处的路径是不能带文件名的
+            pFeatureWorkspace = (IFeatureWorkspace)pWorkspaceFactory.OpenFromFile(filePath, 0);
+            pFeatureLayer = new FeatureLayerClass();
+            //注意这里的文件名是不能带路径的
+            pFeatureLayer.FeatureClass = pFeatureWorkspace.OpenFeatureClass(fileName);
+            pFeatureLayer.Name = pFeatureLayer.FeatureClass.AliasName;
+            e.Map.AddLayer(pFeatureLayer);
+            e.ActiveView.Refresh();
+        }
+
+
+        void importShp(AxMapControl e, string strFullPath)
+        {
             int Index = strFullPath.LastIndexOf("\\");
             string filePath = strFullPath.Substring(0, Index);
             string fileName = strFullPath.Substring(Index + 1);

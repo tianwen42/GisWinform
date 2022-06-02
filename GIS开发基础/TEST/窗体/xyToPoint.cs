@@ -1,4 +1,5 @@
-﻿using ESRI.ArcGIS.Controls;
+﻿using ESRI.ArcGIS.Carto;
+using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.DataSourcesFile;
 using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
@@ -24,7 +25,7 @@ namespace TEST.窗体
         public xyToPoint(AxMapControl Map)
         {
             InitializeComponent();
-            Map = AxMap;
+            AxMap = Map;
         }
 
         private ISpatialReference CreateSpatialReference()
@@ -92,10 +93,9 @@ namespace TEST.窗体
         {
             using (System.IO.FileStream fs = new System.IO.FileStream(filePath, System.IO.FileMode.Open, System.IO.FileAccess.Read))
             {
-                NPOI.SS.UserModel.IWorkbook workbook = new NPOI.XSSF.UserModel.XSSFWorkbook(fs);
-                NPOI.SS.UserModel.ISheet sheet = workbook.GetSheetAt(0);
-                NPOI.SS.UserModel.IRow row = null;
 
+                int index_X ;
+                int index_Y ;
                 // 要素游标
                 IFeatureBuffer pFeatureBuffer = pFeatureClass.CreateFeatureBuffer();
                 IFeatureCursor pFeatureCursor = pFeatureClass.Insert(true);
@@ -113,67 +113,101 @@ namespace TEST.窗体
                 {
                     fieldValue_X = comboBox1.SelectedItem.ToString();
                     fieldValue_Y = comboBox2.SelectedItem.ToString();
+                    //字段索引
+                    index_X = resDataSet.Tables[0].Columns.IndexOf(fieldValue_X);
+                    index_Y = resDataSet.Tables[0].Columns.IndexOf(fieldValue_Y);
+
+                    GenerateFeature gf = new GenerateFeature();
+
+
+                    int rows = resDataSet.Tables[0].Rows.Count;
+                    // 遍历excel数据行
+                    for (int i = 0; i < rows; i++)
+                    {
+                        string strValue = resDataSet.Tables[0].Rows[i][index_X].ToString();
+                        // 读取单元格
+                        fieldValue_X = resDataSet.Tables[0].Rows[i][index_X].ToString();
+                        fieldValue_Y = resDataSet.Tables[0].Rows[i][index_Y].ToString();
+
+                        // 创建坐标点
+                        IPoint pPoint = new Point();
+                        pPoint.X = double.Parse(fieldValue_X);
+                        pPoint.Y = double.Parse(fieldValue_Y);
+
+                        // 设置字段值
+                        pFeatureBuffer.Shape = pPoint;
+                        pFeatureBuffer.set_Value(2, fieldValue_X);
+                        pFeatureBuffer.set_Value(3, fieldValue_Y);
+                        pFeatureCursor.InsertFeature(pFeatureBuffer);
+                    }
+                    pFeatureCursor.Flush();
+
+                    // 释放游标
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(pFeatureBuffer);
+                    System.Runtime.InteropServices.Marshal.ReleaseComObject(pFeatureCursor);
                 }
-
-
-                // 字段索引
-                int fieldIndex_X = pFeatureClass.Fields.FindField(fieldValue_X);
-                int fieldIndex_Y = pFeatureClass.Fields.FindField(fieldValue_Y);
-
-
-
-
-
-                GenerateFeature gf = new GenerateFeature();
-
-                // 遍历excel数据行
-                for (int i = sheet.FirstRowNum + 1; i <= sheet.LastRowNum; i++)
-                {
-                    row = sheet.GetRow(i);
-
-                    // 读取单元格
-                    fieldValue_X = row.Cells[0].ToString();
-                    fieldValue_Y = row.Cells[1].ToString();
-
-                    // 创建坐标点
-                    ESRI.ArcGIS.Geometry.IPoint pPoint = new ESRI.ArcGIS.Geometry.Point();
-                    pPoint.X = double.Parse(fieldValue_X);
-                    pPoint.Y = double.Parse(fieldValue_Y);
-
-                    // 设置字段值
-                    pFeatureBuffer.Shape = pPoint;
-                    pFeatureBuffer.set_Value(fieldIndex_X, fieldValue_X);
-                    pFeatureBuffer.set_Value(fieldIndex_Y, fieldValue_Y);
-                    pFeatureCursor.InsertFeature(pFeatureBuffer);
-                }
-                pFeatureCursor.Flush();
-
-                // 释放游标
-                System.Runtime.InteropServices.Marshal.ReleaseComObject(pFeatureBuffer);
-                System.Runtime.InteropServices.Marshal.ReleaseComObject(pFeatureCursor);
             }
         }
 
         public void button1_Click(object sender, EventArgs e)
         {
-
-
-
-
-            try
+            if (resDataSet != null)
             {
-                // 创建要素类
-                IFeatureClass pFeatureClass = CreateFeatureClass(@"C:\Users\Administrator\Desktop\GisWinform\Temp\point.shp");
-                // 插入要素
-                InsertFeatures(pFeatureClass, excelFilepath);
+                try
+                {
+                    DirectoryInfo topDir = Directory.GetParent(Environment.CurrentDirectory);
+                    string filepath = topDir.Parent.Parent.Parent.FullName;
+                    filepath += "\\Temp\\point.shp";
+                    while (File.Exists(filepath))
+                    {
+                        filepath = fileReName(filepath);
+                    }
+                    
+                    // 创建要素类
+                    IFeatureClass pFeatureClass = CreateFeatureClass(filepath);
+                    // 插入要素
+                    InsertFeatures(pFeatureClass, excelFilepath);
+                    MessageBox.Show("excel转点成功");
 
+                    //插入
+                    importShp(AxMap,filepath);
+
+                    this.Close();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("执行有问题，看看数据\n" + ex.ToString());
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("执行有问题，看看数据\n" + ex.ToString());
+                MessageBox.Show("请先输入数据");
             }
 
         }
+
+        void importShp(AxMapControl e,string strFullPath)
+        {
+            int Index = strFullPath.LastIndexOf("\\");
+            string filePath = strFullPath.Substring(0, Index);
+            string fileName = strFullPath.Substring(Index + 1);
+            //打开工作空间并添加shp文件
+            IWorkspaceFactory pWorkspaceFactory;
+            IFeatureWorkspace pFeatureWorkspace;
+            IFeatureLayer pFeatureLayer;
+            pWorkspaceFactory = new ShapefileWorkspaceFactoryClass();
+            //注意此处的路径是不能带文件名的
+            pFeatureWorkspace = (IFeatureWorkspace)pWorkspaceFactory.OpenFromFile(filePath, 0);
+            pFeatureLayer = new FeatureLayerClass();
+            //注意这里的文件名是不能带路径的
+            pFeatureLayer.FeatureClass = pFeatureWorkspace.OpenFeatureClass(fileName);
+            pFeatureLayer.Name = pFeatureLayer.FeatureClass.AliasName;
+            e.Map.AddLayer(pFeatureLayer);
+            e.ActiveView.Refresh();
+        }
+
+
 
 
 
@@ -250,7 +284,6 @@ namespace TEST.窗体
         {
 
         }
-
 
     }
 }

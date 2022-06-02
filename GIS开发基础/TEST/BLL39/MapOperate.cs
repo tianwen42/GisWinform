@@ -3,7 +3,7 @@ using ESRI.ArcGIS.Geometry;
 using System.Windows.Forms;
 
 
-namespace TEST.BLL
+namespace TEST.BLL39
 {
     class MapOperate
     {

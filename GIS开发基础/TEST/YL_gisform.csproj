@@ -116,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL39\ConvertFeatures.cs" />
+    <Compile Include="BLL39\OpFiles.cs" />
     <Compile Include="BLL39\GenerateFeature.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

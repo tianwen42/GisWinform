@@ -5,7 +5,7 @@ using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
 using System;
 using System.Windows.Forms;
-using TEST.BLL;
+using TEST.BLL39;
 using TEST.窗体;
 
 

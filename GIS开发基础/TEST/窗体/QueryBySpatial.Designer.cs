@@ -1,4 +1,4 @@
-﻿namespace TEST.窗口
+﻿namespace TEST.窗体
 {
     partial class frmQueryBySpatial
     {
