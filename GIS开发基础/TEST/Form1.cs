@@ -343,17 +343,14 @@ namespace TEST
 
         private void 点符号化ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //新创建属性查询窗体
+            
             gugu frmQueryByAttribute = new gugu();
-            //显示属性查询窗体
             frmQueryByAttribute.Show();
         }
 
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //新创建属性查询窗体
             gugu unDoStatement = new gugu();
-            //显示属性查询窗体
             unDoStatement.Show();
         }
 
@@ -424,6 +421,18 @@ namespace TEST
             //更新TOC列表和地图
             axTOCControl1.Update();
             axMapControl1.ActiveView.PartialRefresh(esriViewDrawPhase.esriViewGeography, null, null);
+        }
+
+        private void 帮助ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gugu unDoStatement = new gugu();
+            unDoStatement.Show();
+        }
+
+        private void 网络分析ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gugu unDoStatement = new gugu();
+            unDoStatement.Show();
         }
     }
 }

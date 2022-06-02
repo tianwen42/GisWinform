@@ -480,6 +480,7 @@
             this.网络分析ToolStripMenuItem.Name = "网络分析ToolStripMenuItem";
             this.网络分析ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.网络分析ToolStripMenuItem.Text = "网络分析";
+            this.网络分析ToolStripMenuItem.Click += new System.EventHandler(this.网络分析ToolStripMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
@@ -493,6 +494,7 @@
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
             this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.帮助ToolStripMenuItem.Text = "帮助";
+            this.帮助ToolStripMenuItem.Click += new System.EventHandler(this.帮助ToolStripMenuItem_Click);
             // 
             // axToolbarControl1
             // 
