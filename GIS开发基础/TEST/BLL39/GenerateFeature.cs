@@ -136,12 +136,10 @@ namespace TEST.BLL39
                 // 字段索引
                 int fieldIndex_X = pFeatureClass.Fields.FindField("经度");
                 int fieldIndex_Y = pFeatureClass.Fields.FindField("纬度");
-                int fieldIndex_Z = pFeatureClass.Fields.FindField("名称");
 
                 // 字段值
                 string fieldValue_X = string.Empty;
                 string fieldValue_Y = string.Empty;
-                string fieldValue_Z = string.Empty;
 
                 GenerateFeature gf = new GenerateFeature();
 
@@ -153,7 +151,6 @@ namespace TEST.BLL39
                     // 读取单元格
                     fieldValue_X = row.Cells[0].ToString();
                     fieldValue_Y = row.Cells[1].ToString();
-                    fieldValue_Z = row.Cells[2].ToString();
 
                     // 创建坐标点
                     ESRI.ArcGIS.Geometry.IPoint pPoint = new ESRI.ArcGIS.Geometry.Point();
@@ -164,7 +161,6 @@ namespace TEST.BLL39
                     pFeatureBuffer.Shape = pPoint;
                     pFeatureBuffer.set_Value(fieldIndex_X, fieldValue_X);
                     pFeatureBuffer.set_Value(fieldIndex_Y, fieldValue_Y);
-                    pFeatureBuffer.set_Value(fieldIndex_Z, fieldValue_Z);
                     pFeatureCursor.InsertFeature(pFeatureBuffer);
                 }
                 pFeatureCursor.Flush();
