@@ -143,6 +143,7 @@
             // 
             this.地图文档加载ToolStripMenuItem.Name = "地图文档加载ToolStripMenuItem";
             resources.ApplyResources(this.地图文档加载ToolStripMenuItem, "地图文档加载ToolStripMenuItem");
+            this.地图文档加载ToolStripMenuItem.Click += new System.EventHandler(this.地图文档加载ToolStripMenuItem_Click);
             // 
             // 加载shpToolStripMenuItem
             // 
@@ -215,6 +216,7 @@
             // 
             this.添加目的景点ToolStripMenuItem.Name = "添加目的景点ToolStripMenuItem";
             resources.ApplyResources(this.添加目的景点ToolStripMenuItem, "添加目的景点ToolStripMenuItem");
+            this.添加目的景点ToolStripMenuItem.Click += new System.EventHandler(this.添加目的景点ToolStripMenuItem_Click);
             // 
             // 规划路线ToolStripMenuItem1
             // 

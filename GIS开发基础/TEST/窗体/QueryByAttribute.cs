@@ -3,7 +3,7 @@ using ESRI.ArcGIS.Geodatabase;
 using System;
 using System.Windows.Forms;
 
-namespace TEST.窗口
+namespace TEST.窗体
 {
     public partial class frmQueryByAttribute : Form
     {

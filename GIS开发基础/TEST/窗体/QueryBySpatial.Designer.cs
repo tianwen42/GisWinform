@@ -65,6 +65,7 @@
             this.checkedListBoxTargetLayers.Name = "checkedListBoxTargetLayers";
             this.checkedListBoxTargetLayers.Size = new System.Drawing.Size(477, 204);
             this.checkedListBoxTargetLayers.TabIndex = 1;
+            this.checkedListBoxTargetLayers.SelectedIndexChanged += new System.EventHandler(this.checkedListBoxTargetLayers_SelectedIndexChanged);
             // 
             // label1
             // 

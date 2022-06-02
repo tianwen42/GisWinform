@@ -50,5 +50,15 @@ namespace GISWindowsFormsApp
         {
 
         }
+
+        private void 添加目的景点ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 地图文档加载ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

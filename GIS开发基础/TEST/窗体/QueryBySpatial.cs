@@ -4,7 +4,7 @@ using ESRI.ArcGIS.Geometry;
 using System;
 using System.Windows.Forms;
 
-namespace TEST.窗口
+namespace TEST.窗体
 {
     public partial class frmQueryBySpatial : Form
     {
@@ -219,6 +219,11 @@ namespace TEST.窗口
         }
 
         private void labelDescription_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListBoxTargetLayers_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
