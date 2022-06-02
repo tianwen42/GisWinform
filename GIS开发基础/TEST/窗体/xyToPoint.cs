@@ -1,5 +1,4 @@
-﻿using ESRI.ArcGIS.Carto;
-using ESRI.ArcGIS.Controls;
+﻿using ESRI.ArcGIS.Controls;
 using ESRI.ArcGIS.DataSourcesFile;
 using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
@@ -10,7 +9,6 @@ using System.Data;
 using System.IO;
 using System.Windows.Forms;
 using TEST.BLL39;
-using TEST.MODEL;
 
 namespace TEST.窗体
 {
@@ -23,10 +21,10 @@ namespace TEST.窗体
 
 
 
-        public xyToPoint(AxMapControl AxMap)
+        public xyToPoint(AxMapControl Map)
         {
             InitializeComponent();
-            AxMap = AxMap;
+            Map = AxMap;
         }
 
         private ISpatialReference CreateSpatialReference()
@@ -123,7 +121,7 @@ namespace TEST.窗体
                 int fieldIndex_Y = pFeatureClass.Fields.FindField(fieldValue_Y);
 
 
-                
+
 
 
                 GenerateFeature gf = new GenerateFeature();
@@ -159,21 +157,22 @@ namespace TEST.窗体
         public void button1_Click(object sender, EventArgs e)
         {
 
-            
 
-            
-            try{
+
+
+            try
+            {
                 // 创建要素类
                 IFeatureClass pFeatureClass = CreateFeatureClass(@"C:\Users\Administrator\Desktop\GisWinform\Temp\point.shp");
                 // 插入要素
                 InsertFeatures(pFeatureClass, excelFilepath);
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("执行有问题，看看数据\n"+ex.ToString());
+                MessageBox.Show("执行有问题，看看数据\n" + ex.ToString());
             }
-            
+
         }
 
 
@@ -252,6 +251,6 @@ namespace TEST.窗体
 
         }
 
-        
+
     }
 }

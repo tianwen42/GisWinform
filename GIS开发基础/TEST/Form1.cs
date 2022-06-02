@@ -162,7 +162,7 @@ namespace TEST
             }
             catch (Exception ex)
             {
-                MessageBox.Show("该字段不存在！");
+                MessageBox.Show("该字段不存在！\n" + ex.ToString());
             }
         }
         #endregion
@@ -342,7 +342,7 @@ namespace TEST
 
         private void 点符号化ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             gugu frmQueryByAttribute = new gugu();
             frmQueryByAttribute.Show();
         }

@@ -180,7 +180,7 @@ namespace TEST.窗体
             }
             catch (Exception ex)
             {
-                MessageBox.Show("出现错误楼");
+                MessageBox.Show("出现错误喽！\n" + ex.ToString());
             }
 
         }

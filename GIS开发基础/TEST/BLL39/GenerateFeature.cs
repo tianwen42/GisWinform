@@ -2,11 +2,6 @@
 using ESRI.ArcGIS.DataSourcesFile;
 using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.Geometry;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TEST.BLL39
 {
@@ -42,7 +37,7 @@ namespace TEST.BLL39
             IFeatureClass pFeatureClass = pFeatureLayer.FeatureClass;
             IFeature pFeature;//添加的一个IFeature实例，用于添加到当前图层上
             IFeatureClassWrite featureWrite = (IFeatureClassWrite)pFeatureClass;
-            pFeature =pFeatureClass.CreateFeature();
+            pFeature = pFeatureClass.CreateFeature();
             pFeature.Shape = pPoint;
             pFeature.Store();
             featureWrite.WriteFeature(pFeature);

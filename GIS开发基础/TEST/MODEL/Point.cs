@@ -1,11 +1,4 @@
-﻿using ESRI.ArcGIS.Geometry;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TEST.MODEL
+﻿namespace TEST.MODEL
 {
     public class Point
     {
@@ -16,7 +9,7 @@ namespace TEST.MODEL
             public double dY { get; set; }
         }
 
-        
+
 
     }
 }
