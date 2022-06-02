@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\TEST.窗体.BufferAnalysis.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\TEST.窗体.gugu.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\TEST.窗体.frmQueryBySpatial.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\TEST.窗体.frmQueryByAttribute.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\TEST.Form1.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\TEST.Properties.Resources.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\TEST.窗体.xyToPoint.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\YL_gisform.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Release\YL_gisform.csproj.CoreCompileInputs.cache

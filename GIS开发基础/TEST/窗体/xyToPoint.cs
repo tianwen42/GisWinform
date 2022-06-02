@@ -11,6 +11,8 @@ using System.IO;
 using System.Windows.Forms;
 using TEST.BLL39;
 
+
+
 namespace TEST.窗体
 {
     public partial class xyToPoint : Form
@@ -160,7 +162,7 @@ namespace TEST.窗体
                     filepath += "\\Temp\\point.shp";
                     while (File.Exists(filepath))
                     {
-                        filepath = fileReName(filepath);
+                        filepath = OpFiles.fileReName(filepath);
                     }
                     
                     // 创建要素类

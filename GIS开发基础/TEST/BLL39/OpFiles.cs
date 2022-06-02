@@ -9,7 +9,7 @@ namespace TEST.BLL39
 {
     class OpFiles
     {
-        string fileReName(string filepath)
+        public static string fileReName(string filepath)
         {
             int i = 1;
             while (File.Exists(filepath))
