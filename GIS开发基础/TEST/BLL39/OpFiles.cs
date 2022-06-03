@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ESRI.ArcGIS.Controls;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,11 @@ namespace TEST.BLL39
                 }
             }
             return filepath;
+        }
+
+        internal static void importShp(AxMapControl axMap, string filepath)
+        {
+            throw new NotImplementedException();
         }
     }
 }
