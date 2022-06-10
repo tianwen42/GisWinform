@@ -69,6 +69,9 @@
             this.缓冲区ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.剪切ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.融合ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.反距离插值分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.坡度ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.坡向ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.转换工具ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.shp转gdb要素ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xY转点ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -424,33 +427,58 @@
             // 
             // 矢量操作ToolStripMenuItem
             // 
+            this.矢量操作ToolStripMenuItem.Checked = true;
+            this.矢量操作ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.矢量操作ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.缓冲区ToolStripMenuItem,
             this.剪切ToolStripMenuItem,
-            this.融合ToolStripMenuItem});
+            this.融合ToolStripMenuItem,
+            this.反距离插值分析ToolStripMenuItem,
+            this.坡度ToolStripMenuItem,
+            this.坡向ToolStripMenuItem});
             this.矢量操作ToolStripMenuItem.Name = "矢量操作ToolStripMenuItem";
-            this.矢量操作ToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.矢量操作ToolStripMenuItem.Text = "矢量操作";
+            this.矢量操作ToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.矢量操作ToolStripMenuItem.Text = " 分析工具";
+            this.矢量操作ToolStripMenuItem.Click += new System.EventHandler(this.矢量操作ToolStripMenuItem_Click);
             // 
             // 缓冲区ToolStripMenuItem
             // 
             this.缓冲区ToolStripMenuItem.Name = "缓冲区ToolStripMenuItem";
-            this.缓冲区ToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+            this.缓冲区ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.缓冲区ToolStripMenuItem.Text = "缓冲区";
             // 
             // 剪切ToolStripMenuItem
             // 
             this.剪切ToolStripMenuItem.Name = "剪切ToolStripMenuItem";
-            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.剪切ToolStripMenuItem.Text = "剪切";
             this.剪切ToolStripMenuItem.Click += new System.EventHandler(this.剪切ToolStripMenuItem_Click);
             // 
             // 融合ToolStripMenuItem
             // 
             this.融合ToolStripMenuItem.Name = "融合ToolStripMenuItem";
-            this.融合ToolStripMenuItem.Size = new System.Drawing.Size(137, 26);
+            this.融合ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.融合ToolStripMenuItem.Text = "融合";
             this.融合ToolStripMenuItem.Click += new System.EventHandler(this.融合ToolStripMenuItem_Click);
+            // 
+            // 反距离插值分析ToolStripMenuItem
+            // 
+            this.反距离插值分析ToolStripMenuItem.Name = "反距离插值分析ToolStripMenuItem";
+            this.反距离插值分析ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.反距离插值分析ToolStripMenuItem.Text = "反距离插值分析";
+            this.反距离插值分析ToolStripMenuItem.Click += new System.EventHandler(this.反距离插值分析ToolStripMenuItem_Click);
+            // 
+            // 坡度ToolStripMenuItem
+            // 
+            this.坡度ToolStripMenuItem.Name = "坡度ToolStripMenuItem";
+            this.坡度ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.坡度ToolStripMenuItem.Text = "坡度";
+            // 
+            // 坡向ToolStripMenuItem
+            // 
+            this.坡向ToolStripMenuItem.Name = "坡向ToolStripMenuItem";
+            this.坡向ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.坡向ToolStripMenuItem.Text = "坡向";
             // 
             // 转换工具ToolStripMenuItem
             // 
@@ -589,6 +617,9 @@
         private System.Windows.Forms.ToolStripMenuItem 面符号填充ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xY转点ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 反距离插值分析ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 坡度ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 坡向ToolStripMenuItem;
     }
 }
 

@@ -7,6 +7,8 @@ using System;
 using System.Windows.Forms;
 using TEST.BLL39;
 using TEST.窗体;
+using ESRI.ArcGIS.Geoprocessor;
+using ESRI.ArcGIS.Geoprocessing;
 
 
 
@@ -432,6 +434,20 @@ namespace TEST
         {
             gugu unDoStatement = new gugu();
             unDoStatement.Show();
+        }
+
+        private void 矢量操作ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 反距离插值分析ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            RasterOprater rasop=new RasterOprater();
+            rasop.IDW();
+
+            axMapControl1.Refresh();
         }
     }
 }
