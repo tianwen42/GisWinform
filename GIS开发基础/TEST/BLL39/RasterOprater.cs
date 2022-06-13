@@ -15,33 +15,33 @@ namespace TEST.BLL39
 
         public void IDW()
         {
-            double cellsize = 0.1; ////设置越小效率越低
+            //double cellsize = 0.1; ////设置越小效率越低
 
-            IRasterLayer rl = new RasterLayerClass();
-
-
-
-            string idwpath = Application.StartupPath + "\\IDW";
+            //IRasterLayer rl = new RasterLayerClass();
 
 
 
-            Geoprocessor gp = new ESRI.ArcGIS.Geoprocessor.Geoprocessor();
-
-            ESRI.ArcGIS.SpatialAnalystTools.Idw pIDW = new ESRI.ArcGIS.SpatialAnalystTools.Idw(pFeaLyr, "Z", idwpath);
-
-            pIDW.in_barrier_polyline_features = pFeaLyrShp;
-
-            pIDW.power = 2;
+            //string idwpath = Application.StartupPath + "\\IDW";
 
 
 
-            pIDW.cell_size = cellsize;
+            //Geoprocessor gp = new ESRI.ArcGIS.Geoprocessor.Geoprocessor();
 
-            IGeoProcessorResult results = (IGeoProcessorResult)gp.Execute(pIDW, null);
+            //ESRI.ArcGIS.SpatialAnalystTools.Idw pIDW = new ESRI.ArcGIS.SpatialAnalystTools.Idw(pFeaLyr, "Z", idwpath);
+
+            //pIDW.in_barrier_polyline_features = pFeaLyrShp;
+
+            //pIDW.power = 2;
 
 
 
-            rl.CreateFromFilePath(idwpath);
+            //pIDW.cell_size = cellsize;
+
+            //IGeoProcessorResult results = (IGeoProcessorResult)gp.Execute(pIDW, null);
+
+
+
+            //rl.CreateFromFilePath(idwpath);
         }
         
     }
