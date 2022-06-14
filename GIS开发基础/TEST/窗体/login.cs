@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DAL.must;
+using System;
 using System.Windows.Forms;
+using DAL.SqlHelper;
+using DAL.must;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace TEST.窗体
 {
@@ -38,7 +35,42 @@ namespace TEST.窗体
             try
             {
                 conn.Open();//打开通道，建立连接，可能出现异常,使用try catch语句
-                MessageBox.Show("已经建立连接");
+
+                //获取输入
+                if(txtUserName.Text=="" || txtPassword.Text == "")
+                {
+                    MessageBox.Show("请输入账号密码");
+                    return;
+                }
+                string userName = txtUserName.Text;
+                string passward = txtPassword.Text;
+
+
+                string sqlSelect = "SELECT Name,Passward from stuinfo WHERE Name=@name;";
+                MySqlParameter parms = new MySqlParameter("@name", userName);
+                //string sql = @"SELECT Name,Password from stuinfo where Name={} AND Password={}";
+                MySqlDataReader dr =DAL.must.MySqlHelper.ExecuteReader(conn, CommandType.Text, sqlSelect, parms);
+                //DAL.must.MySqlHelper.ExecuteReader(conn, CommandType.Text, sql);
+
+                bool flag = false;
+                while (dr.Read())
+                {
+                    if (passward == dr[1].ToString()) {
+                        flag = true;
+                    };
+                    
+                }
+                if (flag)
+                {
+                    this.Hide();
+                    MessageBox.Show("登录成功！");
+                    new Form1().Show(); 
+                }
+                else
+                {
+                    MessageBox.Show("密码错误");
+                }
+                //SELECT Name,Password INTO stuinfo VALUES('杨林',213,212)
                 //在这里使用代码对数据库进行增删查改
             }
             catch (MySqlException ex)
@@ -49,6 +81,16 @@ namespace TEST.窗体
             {
                 conn.Close();
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
