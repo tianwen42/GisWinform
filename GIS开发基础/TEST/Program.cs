@@ -16,7 +16,7 @@ namespace TEST
             //绑定
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());//Form1()
+            Application.Run(new Form1());//Form1()
         }
     }
 }
