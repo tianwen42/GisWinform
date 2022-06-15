@@ -1,7 +1,6 @@
 ﻿using DAL.must;
 using System;
 using System.Windows.Forms;
-using DAL.SqlHelper;
 using DAL.must;
 using MySql.Data.MySqlClient;
 using System.Data;
@@ -62,9 +61,10 @@ namespace TEST.窗体
                 }
                 if (flag)
                 {
-                    this.Hide();
-                    MessageBox.Show("登录成功！");
-                    new Form1().Show(); 
+                    this.Close();
+                    Program.isValidUser = true;
+                 
+                    //new Form1().Show(); 
                 }
                 else
                 {

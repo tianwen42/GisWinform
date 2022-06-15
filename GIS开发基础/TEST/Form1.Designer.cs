@@ -266,6 +266,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(1093, 28);
             this.menuStrip1.TabIndex = 18;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // 导入ToolStripMenuItem
             // 
@@ -444,40 +445,40 @@
             // 缓冲区ToolStripMenuItem
             // 
             this.缓冲区ToolStripMenuItem.Name = "缓冲区ToolStripMenuItem";
-            this.缓冲区ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.缓冲区ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.缓冲区ToolStripMenuItem.Text = "缓冲区";
             // 
             // 剪切ToolStripMenuItem
             // 
             this.剪切ToolStripMenuItem.Name = "剪切ToolStripMenuItem";
-            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.剪切ToolStripMenuItem.Text = "剪切";
             this.剪切ToolStripMenuItem.Click += new System.EventHandler(this.剪切ToolStripMenuItem_Click);
             // 
             // 融合ToolStripMenuItem
             // 
             this.融合ToolStripMenuItem.Name = "融合ToolStripMenuItem";
-            this.融合ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.融合ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.融合ToolStripMenuItem.Text = "融合";
             this.融合ToolStripMenuItem.Click += new System.EventHandler(this.融合ToolStripMenuItem_Click);
             // 
             // 反距离插值分析ToolStripMenuItem
             // 
             this.反距离插值分析ToolStripMenuItem.Name = "反距离插值分析ToolStripMenuItem";
-            this.反距离插值分析ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.反距离插值分析ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.反距离插值分析ToolStripMenuItem.Text = "反距离插值分析";
             this.反距离插值分析ToolStripMenuItem.Click += new System.EventHandler(this.反距离插值分析ToolStripMenuItem_Click);
             // 
             // 坡度ToolStripMenuItem
             // 
             this.坡度ToolStripMenuItem.Name = "坡度ToolStripMenuItem";
-            this.坡度ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.坡度ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.坡度ToolStripMenuItem.Text = "坡度";
             // 
             // 坡向ToolStripMenuItem
             // 
             this.坡向ToolStripMenuItem.Name = "坡向ToolStripMenuItem";
-            this.坡向ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.坡向ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
             this.坡向ToolStripMenuItem.Text = "坡向";
             // 
             // 转换工具ToolStripMenuItem
@@ -533,6 +534,7 @@
             this.axToolbarControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axToolbarControl1.OcxState")));
             this.axToolbarControl1.Size = new System.Drawing.Size(1093, 28);
             this.axToolbarControl1.TabIndex = 19;
+            this.axToolbarControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IToolbarControlEvents_Ax_OnMouseDownEventHandler(this.axToolbarControl1_OnMouseDown);
             // 
             // Form1
             // 

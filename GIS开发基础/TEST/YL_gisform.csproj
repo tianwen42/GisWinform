@@ -201,7 +201,6 @@
     <Compile Include="BLL39\GenerateFeature.cs" />
     <Compile Include="BLL39\RasterOprater.cs" />
     <Compile Include="DAL\MySqlHelper.cs" />
-    <Compile Include="DAL\SqlHelper类.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

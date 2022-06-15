@@ -1,0 +1,25 @@
+E:\Program Files (x86)\vs2010 project files\TEST-6\TEST-6\bin\Debug\TEST-6.exe
+E:\Program Files (x86)\vs2010 project files\TEST-6\TEST-6\bin\Debug\TEST-6.pdb
+E:\Program Files (x86)\vs2010 project files\TEST-6\TEST-6\obj\x86\Debug\TEST_6.Form1.resources
+E:\Program Files (x86)\vs2010 project files\TEST-6\TEST-6\obj\x86\Debug\TEST_6.Properties.Resources.resources
+E:\Program Files (x86)\vs2010 project files\TEST-6\TEST-6\obj\x86\Debug\TEST-6.csproj.GenerateResource.Cache
+E:\Program Files (x86)\vs2010 project files\TEST-6\TEST-6\obj\x86\Debug\TEST-6.exe
+E:\Program Files (x86)\vs2010 project files\TEST-6\TEST-6\obj\x86\Debug\TEST-6.pdb
+E:\Program Files (x86)\vs2010 project files\TEST-6\TEST-6\obj\x86\Debug\TEST-6.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\bin\Debug\TEST-6.exe
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\bin\Debug\TEST-6.pdb
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST_6.Form1.resources
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST_6.Properties.Resources.resources
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.exe
+C:\Users\Administrator\Desktop\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.pdb
+F:\数据库\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\bin\Debug\TEST-6.exe
+F:\数据库\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\bin\Debug\TEST-6.pdb
+F:\数据库\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.csprojResolveAssemblyReference.cache
+F:\数据库\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST_6.Form1.resources
+F:\数据库\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST_6.Properties.Resources.resources
+F:\数据库\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.csproj.GenerateResource.Cache
+F:\数据库\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.exe
+F:\数据库\SchoolNavi\Backup\TEST-6\TEST-6\TEST-6\obj\x86\Debug\TEST-6.pdb

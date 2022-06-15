@@ -364,7 +364,7 @@ namespace TEST
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void 面符号填充ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -448,6 +448,16 @@ namespace TEST
             rasop.IDW();
 
             axMapControl1.Refresh();
+        }
+
+        private void axToolbarControl1_OnMouseDown(object sender, IToolbarControlEvents_OnMouseDownEvent e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

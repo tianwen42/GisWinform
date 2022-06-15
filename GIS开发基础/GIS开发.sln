@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32510.428
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1972
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YL_gisform", "TEST\YL_gisform.csproj", "{EF7BFBB0-3ADC-4E85-81C1-EDD25556BE92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campus", "campus\Campus.csproj", "{8275BF96-7218-47D3-A3CE-97B10C614424}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,12 @@ Global
 		{EF7BFBB0-3ADC-4E85-81C1-EDD25556BE92}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{EF7BFBB0-3ADC-4E85-81C1-EDD25556BE92}.Release|x86.ActiveCfg = Release|Any CPU
 		{EF7BFBB0-3ADC-4E85-81C1-EDD25556BE92}.Release|x86.Build.0 = Release|Any CPU
+		{8275BF96-7218-47D3-A3CE-97B10C614424}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8275BF96-7218-47D3-A3CE-97B10C614424}.Debug|x86.ActiveCfg = Debug|x86
+		{8275BF96-7218-47D3-A3CE-97B10C614424}.Debug|x86.Build.0 = Debug|x86
+		{8275BF96-7218-47D3-A3CE-97B10C614424}.Release|Any CPU.ActiveCfg = Release|x86
+		{8275BF96-7218-47D3-A3CE-97B10C614424}.Release|x86.ActiveCfg = Release|x86
+		{8275BF96-7218-47D3-A3CE-97B10C614424}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
