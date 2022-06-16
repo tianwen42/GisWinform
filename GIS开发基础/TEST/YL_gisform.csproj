@@ -59,6 +59,7 @@
     <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="ESRI.ArcGIS.AnalysisTools, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
     <Reference Include="ESRI.ArcGIS.AxControls, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -83,6 +84,9 @@
     <Reference Include="ESRI.ArcGIS.Display, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -210,11 +214,11 @@
     <Compile Include="BLL39\MapOperate.cs" />
     <Compile Include="BLL39\OpenFeatureClass.cs" />
     <Compile Include="MODEL\Point.cs" />
-    <Compile Include="窗体\BufferAnalysis.cs">
+    <Compile Include="窗体\BufferSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="窗体\BufferAnalysis.Designer.cs">
-      <DependentUpon>BufferAnalysis.cs</DependentUpon>
+    <Compile Include="窗体\BufferSettings.designer.cs">
+      <DependentUpon>BufferSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="窗体\gugu.cs">
       <SubType>Form</SubType>
@@ -240,14 +244,20 @@
     <Compile Include="窗体\QueryByAttribute.Designer.cs">
       <DependentUpon>QueryByAttribute.cs</DependentUpon>
     </Compile>
+    <Compile Include="窗体\Symbolization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="窗体\Symbolization.designer.cs">
+      <DependentUpon>Symbolization.cs</DependentUpon>
+    </Compile>
     <Compile Include="窗体\xyToPoint.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="窗体\xyToPoint.Designer.cs">
       <DependentUpon>xyToPoint.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="窗体\BufferAnalysis.resx">
-      <DependentUpon>BufferAnalysis.cs</DependentUpon>
+    <EmbeddedResource Include="窗体\BufferSettings.resx">
+      <DependentUpon>BufferSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="窗体\gugu.resx">
       <DependentUpon>gugu.cs</DependentUpon>
@@ -277,6 +287,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="窗体\Symbolization.resx">
+      <DependentUpon>Symbolization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="窗体\xyToPoint.resx">
       <DependentUpon>xyToPoint.cs</DependentUpon>
     </EmbeddedResource>

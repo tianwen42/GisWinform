@@ -59,9 +59,6 @@
             this.图层居中ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.停止操作状态ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.渲染ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.点符号化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.线符号化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.面符号填充ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.空间查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.属性查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -325,28 +322,28 @@
             // 点击放大ToolStripMenuItem
             // 
             this.点击放大ToolStripMenuItem.Name = "点击放大ToolStripMenuItem";
-            this.点击放大ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.点击放大ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.点击放大ToolStripMenuItem.Text = "点击放大";
             this.点击放大ToolStripMenuItem.Click += new System.EventHandler(this.点击放大ToolStripMenuItem_Click);
             // 
             // 点击缩小ToolStripMenuItem
             // 
             this.点击缩小ToolStripMenuItem.Name = "点击缩小ToolStripMenuItem";
-            this.点击缩小ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.点击缩小ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.点击缩小ToolStripMenuItem.Text = "点击缩小";
             this.点击缩小ToolStripMenuItem.Click += new System.EventHandler(this.点击缩小ToolStripMenuItem_Click);
             // 
             // 选框放大ToolStripMenuItem
             // 
             this.选框放大ToolStripMenuItem.Name = "选框放大ToolStripMenuItem";
-            this.选框放大ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.选框放大ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.选框放大ToolStripMenuItem.Text = "选框放大";
             this.选框放大ToolStripMenuItem.Click += new System.EventHandler(this.选框放大ToolStripMenuItem_Click);
             // 
             // 选框缩小ToolStripMenuItem
             // 
             this.选框缩小ToolStripMenuItem.Name = "选框缩小ToolStripMenuItem";
-            this.选框缩小ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.选框缩小ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.选框缩小ToolStripMenuItem.Text = "选框缩小";
             this.选框缩小ToolStripMenuItem.Click += new System.EventHandler(this.选框缩小ToolStripMenuItem_Click);
             // 
@@ -354,53 +351,30 @@
             // 
             this.panToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("panToolStripMenuItem.Image")));
             this.panToolStripMenuItem.Name = "panToolStripMenuItem";
-            this.panToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.panToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.panToolStripMenuItem.Text = "移动";
             this.panToolStripMenuItem.Click += new System.EventHandler(this.panToolStripMenuItem_Click);
             // 
             // 图层居中ToolStripMenuItem
             // 
             this.图层居中ToolStripMenuItem.Name = "图层居中ToolStripMenuItem";
-            this.图层居中ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.图层居中ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.图层居中ToolStripMenuItem.Text = "图层居中";
             this.图层居中ToolStripMenuItem.Click += new System.EventHandler(this.图层居中ToolStripMenuItem_Click);
             // 
             // 停止操作状态ToolStripMenuItem
             // 
             this.停止操作状态ToolStripMenuItem.Name = "停止操作状态ToolStripMenuItem";
-            this.停止操作状态ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.停止操作状态ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.停止操作状态ToolStripMenuItem.Text = "停止操作状态";
             this.停止操作状态ToolStripMenuItem.Click += new System.EventHandler(this.停止操作状态ToolStripMenuItem_Click);
             // 
             // 渲染ToolStripMenuItem
             // 
-            this.渲染ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.点符号化ToolStripMenuItem,
-            this.线符号化ToolStripMenuItem,
-            this.面符号填充ToolStripMenuItem});
             this.渲染ToolStripMenuItem.Name = "渲染ToolStripMenuItem";
             this.渲染ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.渲染ToolStripMenuItem.Text = "渲染";
-            // 
-            // 点符号化ToolStripMenuItem
-            // 
-            this.点符号化ToolStripMenuItem.Name = "点符号化ToolStripMenuItem";
-            this.点符号化ToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
-            this.点符号化ToolStripMenuItem.Text = "点符号化";
-            this.点符号化ToolStripMenuItem.Click += new System.EventHandler(this.点符号化ToolStripMenuItem_Click);
-            // 
-            // 线符号化ToolStripMenuItem
-            // 
-            this.线符号化ToolStripMenuItem.Name = "线符号化ToolStripMenuItem";
-            this.线符号化ToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
-            this.线符号化ToolStripMenuItem.Text = "线符号化";
-            // 
-            // 面符号填充ToolStripMenuItem
-            // 
-            this.面符号填充ToolStripMenuItem.Name = "面符号填充ToolStripMenuItem";
-            this.面符号填充ToolStripMenuItem.Size = new System.Drawing.Size(159, 26);
-            this.面符号填充ToolStripMenuItem.Text = "面符号填充";
-            this.面符号填充ToolStripMenuItem.Click += new System.EventHandler(this.面符号填充ToolStripMenuItem_Click);
+            this.渲染ToolStripMenuItem.Click += new System.EventHandler(this.渲染ToolStripMenuItem_Click);
             // 
             // 查询ToolStripMenuItem
             // 
@@ -415,14 +389,14 @@
             // 空间查询ToolStripMenuItem
             // 
             this.空间查询ToolStripMenuItem.Name = "空间查询ToolStripMenuItem";
-            this.空间查询ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.空间查询ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.空间查询ToolStripMenuItem.Text = "空间查询";
             this.空间查询ToolStripMenuItem.Click += new System.EventHandler(this.空间查询ToolStripMenuItem_Click);
             // 
             // 属性查询ToolStripMenuItem
             // 
             this.属性查询ToolStripMenuItem.Name = "属性查询ToolStripMenuItem";
-            this.属性查询ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.属性查询ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.属性查询ToolStripMenuItem.Text = "属性查询";
             this.属性查询ToolStripMenuItem.Click += new System.EventHandler(this.属性查询ToolStripMenuItem_Click);
             // 
@@ -445,40 +419,41 @@
             // 缓冲区ToolStripMenuItem
             // 
             this.缓冲区ToolStripMenuItem.Name = "缓冲区ToolStripMenuItem";
-            this.缓冲区ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.缓冲区ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.缓冲区ToolStripMenuItem.Text = "缓冲区";
+            this.缓冲区ToolStripMenuItem.Click += new System.EventHandler(this.缓冲区ToolStripMenuItem_Click);
             // 
             // 剪切ToolStripMenuItem
             // 
             this.剪切ToolStripMenuItem.Name = "剪切ToolStripMenuItem";
-            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.剪切ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.剪切ToolStripMenuItem.Text = "剪切";
             this.剪切ToolStripMenuItem.Click += new System.EventHandler(this.剪切ToolStripMenuItem_Click);
             // 
             // 融合ToolStripMenuItem
             // 
             this.融合ToolStripMenuItem.Name = "融合ToolStripMenuItem";
-            this.融合ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.融合ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.融合ToolStripMenuItem.Text = "融合";
             this.融合ToolStripMenuItem.Click += new System.EventHandler(this.融合ToolStripMenuItem_Click);
             // 
             // 反距离插值分析ToolStripMenuItem
             // 
             this.反距离插值分析ToolStripMenuItem.Name = "反距离插值分析ToolStripMenuItem";
-            this.反距离插值分析ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.反距离插值分析ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.反距离插值分析ToolStripMenuItem.Text = "反距离插值分析";
             this.反距离插值分析ToolStripMenuItem.Click += new System.EventHandler(this.反距离插值分析ToolStripMenuItem_Click);
             // 
             // 坡度ToolStripMenuItem
             // 
             this.坡度ToolStripMenuItem.Name = "坡度ToolStripMenuItem";
-            this.坡度ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.坡度ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.坡度ToolStripMenuItem.Text = "坡度";
             // 
             // 坡向ToolStripMenuItem
             // 
             this.坡向ToolStripMenuItem.Name = "坡向ToolStripMenuItem";
-            this.坡向ToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.坡向ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.坡向ToolStripMenuItem.Text = "坡向";
             // 
             // 转换工具ToolStripMenuItem
@@ -493,14 +468,14 @@
             // shp转gdb要素ToolStripMenuItem
             // 
             this.shp转gdb要素ToolStripMenuItem.Name = "shp转gdb要素ToolStripMenuItem";
-            this.shp转gdb要素ToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.shp转gdb要素ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.shp转gdb要素ToolStripMenuItem.Text = "shp转gdb要素";
             this.shp转gdb要素ToolStripMenuItem.Click += new System.EventHandler(this.shp转gdb要素ToolStripMenuItem_Click);
             // 
             // xY转点ToolStripMenuItem
             // 
             this.xY转点ToolStripMenuItem.Name = "xY转点ToolStripMenuItem";
-            this.xY转点ToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
+            this.xY转点ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.xY转点ToolStripMenuItem.Text = "XY转点";
             this.xY转点ToolStripMenuItem.Click += new System.EventHandler(this.xY转点ToolStripMenuItem_Click);
             // 
@@ -614,9 +589,6 @@
         private System.Windows.Forms.ToolStripMenuItem panToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 停止操作状态ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 图层居中ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 点符号化ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 线符号化ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 面符号填充ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xY转点ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 反距离插值分析ToolStripMenuItem;

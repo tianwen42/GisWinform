@@ -18,7 +18,7 @@ namespace TEST
     {
         #region 全局变量
         int flag;  //功能键
-
+        public ILayer player;
 
         #endregion
 
@@ -458,6 +458,21 @@ namespace TEST
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void 查ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void 渲染ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Symbolization(axMapControl1, axTOCControl1).Show();
+        }
+
+        private void 缓冲区ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new BufferSettings(axMapControl1.Map, player, axMapControl1).Show();
         }
     }
 }

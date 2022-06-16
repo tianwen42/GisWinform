@@ -18,13 +18,13 @@ namespace TEST
             //绑定
             ESRI.ArcGIS.RuntimeManager.Bind(ESRI.ArcGIS.ProductCode.EngineOrDesktop);
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());//Form1()
+            Application.Run(new Form1());//Form1()
             
-            if (isValidUser == true)
-            {
-                MessageBox.Show("登录成功！");
-                Application.Run(new Form1());
-            }
+            //if (isValidUser == true)
+            //{
+            //    MessageBox.Show("登录成功！");
+            //    Application.Run(new Form1());
+            //}
             //this.Hide();
             
         

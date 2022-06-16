@@ -50,7 +50,6 @@ C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.Ar
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GeoDatabaseDistributed.xml
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.NetworkAnalyst.xml
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.DataSourcesNetCDF.xml
-C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.BufferAnalysis.resources
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.gugu.resources
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.frmQueryBySpatial.resources
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.frmQueryByAttribute.resources
@@ -95,3 +94,8 @@ C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.Ar
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.Geoprocessing.xml
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.GeoAnalyst.xml
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\YL_gisform.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.Symbolization.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.AnalysisTools.dll
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.AnalysisTools.xml
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.AnalysisTools.dll.config
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.BufferSettings.resources
