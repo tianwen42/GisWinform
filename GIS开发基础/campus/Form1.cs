@@ -341,12 +341,12 @@ namespace TEST_6
 
         private void 帮助ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("本产品是提供给大家介绍云南大学校园导航的导航系统软件，详细使用规则，请参见说明书使用操作。\r\n\n\n谢谢使用！");
+            
         }
 
         private void 版权ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Version :0.0.1(2012-11-28)\n\rCopyright:Private Product(本产品版权归本团队所有！)");
+            
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -365,6 +365,11 @@ namespace TEST_6
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

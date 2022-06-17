@@ -328,5 +328,11 @@
   <ItemGroup>
     <None Include="Resources\bike.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\campus\Campus.csproj">
+      <Project>{8275bf96-7218-47d3-a3ce-97b10c614424}</Project>
+      <Name>Campus</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

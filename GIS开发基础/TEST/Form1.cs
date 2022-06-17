@@ -432,8 +432,7 @@ namespace TEST
 
         private void 网络分析ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            gugu unDoStatement = new gugu();
-            unDoStatement.Show();
+
         }
 
         private void 矢量操作ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -473,6 +472,11 @@ namespace TEST
         private void 缓冲区ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new BufferSettings(axMapControl1.Map, player, axMapControl1).Show();
+        }
+
+        private void 最短路径ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new TEST_6.Form1().Show();
         }
     }
 }

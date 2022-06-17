@@ -99,3 +99,5 @@ C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.Ar
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.AnalysisTools.xml
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\ESRI.ArcGIS.AnalysisTools.dll.config
 C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\obj\Debug\TEST.窗体.BufferSettings.resources
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\TEST-6.exe
+C:\Users\Administrator\Desktop\GisWinform\GIS开发基础\TEST\bin\Debug\TEST-6.pdb

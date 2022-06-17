@@ -73,6 +73,7 @@
             this.shp转gdb要素ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xY转点ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.网络分析ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.最短路径ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
@@ -481,10 +482,19 @@
             // 
             // 网络分析ToolStripMenuItem
             // 
+            this.网络分析ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.最短路径ToolStripMenuItem});
             this.网络分析ToolStripMenuItem.Name = "网络分析ToolStripMenuItem";
             this.网络分析ToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
             this.网络分析ToolStripMenuItem.Text = "网络分析";
             this.网络分析ToolStripMenuItem.Click += new System.EventHandler(this.网络分析ToolStripMenuItem_Click);
+            // 
+            // 最短路径ToolStripMenuItem
+            // 
+            this.最短路径ToolStripMenuItem.Name = "最短路径ToolStripMenuItem";
+            this.最短路径ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.最短路径ToolStripMenuItem.Text = "最短路径";
+            this.最短路径ToolStripMenuItem.Click += new System.EventHandler(this.最短路径ToolStripMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
@@ -594,6 +604,7 @@
         private System.Windows.Forms.ToolStripMenuItem 反距离插值分析ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 坡度ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 坡向ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 最短路径ToolStripMenuItem;
     }
 }
 
